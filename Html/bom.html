@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function testConfirm(){
+				var answer=window.confirm("是否退出？");
+				if(answer){
+					window.close();
+				}else{
+					window.alert(":-)")
+				}
+			}
+			function testPrompt(){
+				var res=window.prompt("请输入密码","123");
+				alert(res);/*确定返回输入值，取消返回null*/
+			}
+			function testScrollBy(){
+				window.scrollBy(50,50);
+			}
+			function testScrollTo(){
+				window.scrollTo(150,150);
+			}
+			function testOpen(){
+				window.open("http://www.iotek.com","iotek","left=20,top=50,width=500,height=300,location=no,toolbar=no,status=no,resizable=no");
+			}
+			function showTime(){
+				var d=new Date();
+				var hour=d.getHours();
+				if(hour<10){
+					hour="0"+hour;
+				}
+				var minutes=d.getMinutes();
+				if(minutes<10){
+					minutes="0"+minutes;
+				}
+				var seconds=d.getSeconds();
+				if(seconds<10){
+					seconds="0"+seconds;
+				}
+				document.getElementById("display").innerHTML=hour+":"+minutes+":"+seconds;
+			}
+			var t=window.setInterval("showTime()",1000);
+		</script>
+	</head>
+	<body>
+		<input type="button" value="confirm" onclick="testConfirm()"/><br />
+		<input type="button" value="prompt" onclick="testPrompt()"/><br />
+		<input type="button" value="scrollBy" onclick="testScrollBy()"/><br />
+		<input type="button" value="scrollTo" onclick="testScrollTo()"/><br />
+		<input type="button" value="open" onclick="testOpen()"/><br />
+		<div id="display"></div>
+	</body>
+</html>

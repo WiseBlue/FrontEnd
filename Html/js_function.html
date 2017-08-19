@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			/*var a="3.5";
+					var b=a-2;
+					var c=a*2;
+					var d=a+2;
+					alert(b+"\n"+c+"\n"+d);
+					alert(parseFloat(a)+2);*/
+			var str = "Chenhao-Love-Football and Basketball";
+			/*alert(str.length);//获取长度
+			alert(str.charAt(5));//获取当前位置字符
+			alert(str.toUpperCase());//小写转换成大写
+			alert(str.indexOf('o'));//获取第一次字符索引
+			alert(str.lastIndexOf('o'));//获取最后一次字符索引
+			alert(str.indexOf('o',7));//获取从指定索引后的第一次索引
+			alert(str.substring(2));//截取字符串*/
+			/*alert(str.substring(2, 4)); //截取4-2=2个字符
+			alert(str.slice(2)); //与substring类似，但slice可以使用负数
+			alert(str.slice(3,-1));//负数从右边开始数，到倒数第一个之前
+			alert(str.replace('hao','gang'));*/
+			/*var arr=str.split('-');
+			for (i=0;i<arr.length;i++) {
+				alert(arr[i]);
+			}//切割字符串*/
+			/*alert(str.match("and"));//找到返回查找到的值
+			alert(str.match("bbbb"));//找不到返回null
+			alert(str.search("and"));//找到返回下标索引
+			alert(str.search("bbbb"));//找不到返回-1*/
+			
+			//var str="Chenhao-Love-Football and Basketball";
+			//var reg=/Chenhao/;//一种声明方式
+			//var reg=new RegExp('Chenhao');
+			//alert(reg.exec(str));//查找正则表达式，若找到则返回，若为找到返回null
+			//alert(reg.test(str));//查找正则表达式，若找到返回true，未找到返回false
+
+			//各种通配符的使用
+			/*var str="aaaa";
+			var reg=/./;//测试是否有字符，一个点代表一个字符
+			alert(reg.test(str));*/
+
+			/*var phone="11A1";
+			var reg=/\d/;//\d测试是否有数字，\D测试是否有非数字
+			alert(reg.test(phone));*/
+
+			/*var str="chenhao zhangsan";
+			var reg=/\s/;//匹配空白字符
+			alert(reg.test(str));*/
+
+			/*var str="asdasd123_dd$";
+			var reg=/\w/;//匹配单词字符
+			alert(reg.test(str));*/
+
+			/*var str="chenhao";
+			var reg=/o\b/;//匹配单词边界
+			alert(reg.test(str));*/
+
+			/*var str="chenhao";
+			var reg=/[ce]/;//有其中的字符就返回true
+			alert(reg.test(str));*/
+
+			/*var str="chenhao";
+			var reg=/[^cb]/;//不全是其中的字符就返回true
+			alert(reg.test(str));*/
+
+			/*var str="123";
+			var reg=/[0-9]/;//0-9之间数字就返回true
+			alert(reg.test(str));*/
+
+			/*var str="aaa";
+			var reg=/[a-z]/;
+			alert(reg.test(str));
+			
+			var str="aaa";
+			var reg=/[A-Z]/;
+			alert(reg.test(str));
+			
+			var str="aaa";
+			var reg=/[A-z]/;
+			alert(reg.test(str));*/
+
+			/*var str="redchenhao";
+			var reg=/(red|blue|green)/;
+			alert(reg.test(str));*/
+
+			//正则表达式量词
+			/*var str="chenhao";
+			var reg=/[c+]/;//包含1到多个c字符就返回true
+			alert(reg.test(str));*/
+
+			/*var str="chenhao";
+			var reg=/[c*]/;//包含0到多个c字符就返回true
+			alert(reg.test(str));*/
+
+			/*var str="chenhao";
+			var reg=/[c?]/;//包含0到一个c字符就返回true，只要有0到一个就行
+			alert(reg.test(str));*/
+
+			/*var str="aabbbcc";
+			var reg=/a{2}/;//包含连续两个a返回true
+			alert(reg.test(str));*/
+
+			/*var str="aabbbcc";
+			var reg=/a{2，}/;//包含连续两个a以上（大于等于2）返回true
+			alert(reg.test(str));*/
+
+			/*var str="aaaaaabbbcc";
+			var reg=/a{2,5}/;//包含连续两2到5个a返回true,现在6个a，包含2到5个a也返回true
+			alert(reg.test(str));*/
+
+			/*var str="achenhao";
+			var reg=/^c/;//以c开头返回true
+			alert(reg.test(str));*/
+
+			/*var str="achenhao";
+			var reg=/c$/;//以c结尾返回true
+			alert(reg.test(str));*/
+
+			/*var str="BBS";
+			var reg=/b/i;///b/返回false，加i后不分大小写查找
+			alert(reg.test(str));*/
+
+			/*var str="BSASDASDBAA";
+			var reg=/B/g;//g全局查找，查找多个B，执行全局匹配
+			alert(reg.test(str));
+			alert(reg.test(str));
+			alert(reg.test(str));*/
+
+			/*var str="test\nbbs";
+			var reg=/^b/m;//换行后为一个新的字符串,执行多行匹配
+			alert(reg.test(str));*/
+
+			/*var reg=/^[0-9a-zA-Z_-]+@[0-9a-zA-Z_-]+\.(com|cn|org)/;//表达式组合
+			alert(reg.test("123asc@sina.com"));*/
+
+			//定义JavaScript数组
+			/*var arr=[1,2,3,"abc",true];
+			for(i=0;i<arr.length;i++){
+				document.write(arr[i]+"<br />")
+			}*/
+			//var arr=[];
+			/*var arr=new Array();
+			arr[0]=1;
+			arr[2]="abc";
+			arr[3]=true;
+			document.write(arr[0]+"<br />");
+			document.write(arr[1]+"<br />");
+			document.write(arr[3]+"<br />");
+			document.write(arr.length+"<br />");*/
+
+			/*5>2?alert("5大于2"):alert("5小于2");//三目运算符
+			var a,b,c,d;
+			a=(b=5,c=2,d=3);
+			alert(a);//逗号运算符，以最右边的为标准
+			var a,b,c,d;
+			a=void(b=5,c=2,d=3);//强制返回空，js里为undefined
+			alert(a);*/
+
+			/*var a="abc";
+			alert(typeof(a));//识别a的类型*/
+
+			/*var a=[1,2];
+			alert(a instanceof Array);*/
+		</script>
+	</head>
+
+	<body>
+	</body>
+
+</html>

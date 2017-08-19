@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		#four{
+			list-style-image: inherit ;/*标签图片*/
+			list-style-position:inside ;/*标签位置*/
+			list-style-type: upper-alpha;/*image和type是冲突的*/
+		}	
+		#tb{
+			width: 50%;height: 100px;border:1px solid ;color: red;font-family: "微软雅黑";
+			border-collapse: collapse;caption-side: bottom;empty-cells: hide;
+		}
+		#tb td{
+			border:1px solid;color: red;
+		}
+		</style>
+	</head>
+	<body>
+		<h3>兴趣爱好</h3>
+		<ul id="four">
+			<li>足球</li>
+			<li>篮球</li>
+			<li>网球</li>
+		</ul>
+		<table  id="tb">
+			<caption>我的表格</caption>
+			<tr>
+				<td>单元格1</td>
+				<td>单元格2</td>
+				<td>单元格3</td>
+			</tr>
+			
+			<tr>
+				<td>单元格4</td>
+				<td>单元格5</td>
+				<td></td>
+			</tr>
+		</table>
+	</body>
+</html>

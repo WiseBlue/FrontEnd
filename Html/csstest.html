@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--
+        	作者：offline
+        	时间：2017-04-25
+        	描述：优先级：内联>内嵌>导入>引用
+        	引入样式
+        -->
+		<link href="css/test3.css" rel="stylesheet" type="text/css"/>
+		<!--
+        	作者：offline
+        	时间：2017-04-25
+        	描述：内嵌样式，@import导入样式
+        -->
+		<style type="text/css">
+			p{
+				color: green
+			}
+			@import url("css/test2.css");
+		</style>
+	</head>
+	<body>
+		<!--
+        	作者：offline
+        	时间：2017-04-25
+        	描述：内联样式
+        -->
+		<p style="color: red;">我真帅</p>
+	</body>
+</html>

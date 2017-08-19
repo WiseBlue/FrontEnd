@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.one{
+				font-size: 18px;/*尺寸大小*/
+				font-family: arial;/*字体类型*/
+				font-style: oblique;/*字体样式*/
+			}
+			.one b{
+				font-weight: normal;
+				font-size: 0.5em;/*相对父容器字体大小*/
+			}
+			.two{
+				font-size: 20px;
+				line-height: 100px;/*行高*/
+				color: red;
+				letter-spacing: 10px;/*字母间距*/
+				word-spacing: 50px;/*单词间距*/
+				text-indent: 30px;/*首行缩进*/
+				text-transform: uppercase;/*大小写*/
+				text-decoration: underline;/*文本装饰*/
+				text-align: center;/*显示位置*/
+			}
+			#three{
+				width: 200px;height: 300px;
+				/*border-width: 2px;border-color: red;border-style: dashed;*/
+				border: 2px red dashed;
+				/*边框效果*/
+			}
+			body{
+				background: url(img/t01c3a0e298d2a18066.png);/*背景图片*/
+				background-position:200px 150px ;/*position距离浏览器距离*/
+				background-repeat: no-repeat;/*背景重复*/
+				background-attachment: fixed;/*让背景固定不动*/
+				/*background: url(img/t01c3a0e298d2a18066.png) 200px 150px fixed no-repeat;*/
+			}
+		</style>
+	</head>
+	<body>
+		<p class="one">我的名<b>字</b>叫jack，今年30岁</p>
+		<p class="two">my name is rose，eighteen years old</p>
+		<p id="three">带边框的p标签</p>
+	</body>
+</html>

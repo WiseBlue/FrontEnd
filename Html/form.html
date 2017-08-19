@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<form name="regForm" method="post" action="frameset.html">
+			单行文本框<input type="text" name="username" id="username" maxlength="10"/><br />
+			<label for="password">密码框</label><input type="password" name="password" id="password" size="5"/><br />
+			隐藏域<input type="hidden" name="hidden" id="hidden" /><br />
+			单选按钮<input type="radio" name="sex" id="male" checked="checked"/>男
+			      <input type="radio" name="sex" id="female" />女<br />
+			复选框  <input type="checkbox" name="hobby" value="1" id="football" disabled="disabled"/>足球
+			     <input type="checkbox" name="hobby" value="2" id="basketball" checked="checked"/>篮球
+			     <input type="checkbox" name="hobby" value="3" id="tennis" />网球<br />
+			图像域<input type="image" src="img/t01c3a0e298d2a18066.png" width="100px" 
+				 height="20" name="src" id="src"/><br />
+		          文件上传域<input type="file" name="file" /><br />
+		          提交按钮<input type="submit" name="submit" value="提交按钮"/><br />
+		          重置按钮<input type="reset" name="reset" value="重置按钮"/><br />
+		          普通按钮<input type="button" name="button" value="普通按钮"/><br />
+		    button提交按钮<button type="submit" name="submit2">提交按钮</button><br />
+		    button重置按钮<button type="reset" name="reset2"><b>重置按钮</b></button><br />
+		    button普通按钮<button type="button" name="submit2" disabled="disabled"><i>普通按钮</i></button><br />
+			
+			下拉菜单<br />
+			<select name="city" id="city">
+				<option value="beijing">北京</option>
+				<option selected="selected" value="shanghai">上海</option>
+				<option>南京</option>
+				<option>天津</option>
+			</select><br />
+			列表框<br />
+			<select name="city" id="city2" size="3" multiple="multiple">
+				<option value="beijing">北京</option>
+				<option selected="selected" value="shanghai">上海</option>
+				<option>南京</option>
+				<option>天津</option>
+			</select><br />
+			
+			选项组列表框<br />
+			<select name="city" id="city3" size="6">
+				<optgroup label="一线城市">
+					<option value="beijing">北京</option>
+					<option selected="selected">上海</option>
+				</optgroup>
+				
+				<optgroup label="二线城市">
+					<option value="nanjing">南京</option>
+					<option selected="selected" value="hangzhou">杭州</option>
+					<option value="dalian">大连</option>
+				</optgroup>
+			</select><br />
+		</form>
+	</body>
+</html>
