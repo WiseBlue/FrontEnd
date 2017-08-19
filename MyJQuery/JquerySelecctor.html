@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>子元素过滤选择器</title>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				//alert($('div :first-child').text());//每个div的第一个子元素
+				//alert($('div span:first-child').text())//div第一个子元素为span
+				//alert($('div span:first-of-type').text());//周围有同名元素的第一个子元素
+				//alert($('div b:only-child').text());//父元素中具有唯一子元素
+				//alert($('div span:nth-child(2)').text());//第2个子元素span
+				//alert($('div b:only-of-type').text());//前后没有相同标签
+				alert($('div span:nth-child(even)').text());
+			})
+			
+		</script>
+	</head>
+	<body>
+		<div>
+			<span>Corey</span>
+			<span>Yehuda</span>
+			<span>Adam,</span>
+			<span>Todd</span>
+		</div>
+		<div>
+			<b>Nobody,</b>
+			<span>Jorn,</span>
+			<span>Scott,</span>
+			<span>Timo</span>
+		</div>
+		<div>
+			<b>chenhao</b>
+		</div>
+		<div>
+			<b>zhangsan</b>
+			<b>xiaoqiang</b>
+			<i>wangwu</i>
+		</div>
+	</body>
+</html>

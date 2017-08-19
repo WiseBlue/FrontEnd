@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				//alert($("#ID").val());//ID查找
+				//alert($("a").html());//根据标签查找
+				//alert($('.classname').val());根据类名
+				//alert($("*").length);//获取所有元素
+				alert($("input,a").length);
+			})
+		</script>
+	</head>
+	<body>
+		<input type="text"id="ID" value="根据ID选择" />
+		<a>根据元素名称选择</a>
+		<input type="text" class="classname" value="根据元素css类名选择" />
+	</body>
+</html>

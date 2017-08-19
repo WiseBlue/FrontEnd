@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Size()方法</title>
+		<style type="text/css">
+			
+			html{
+				cursor: help;font-size: 12px;
+				font-family: arial,Helvetica,sans-serif;
+			}
+			div{
+				border: 1px solid #003a75;
+				background-color:#FFFFFF0 ;
+				margin: 5px;padding: 20px;
+				text-align: center;
+				height: 20px;width: 20px;
+				float: left;
+			}
+			
+		</style>
+		<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+		<script type="text/javascript">
+		/*document.onclick=function(){
+				var i=$("div").length+1;//可用。length替换
+				var div=document.createElement("div");
+				div.innerHTML=i;
+				$("body")[0].appendChild(div);
+				$("span")[0].innerHTML=i;*/
+			$(function(){
+				$(document).click(function(){
+					var i=$("div").length+1;
+					var div=$("<div>"+i+"</div>");
+					//$('body').append(div);//最后追加
+					//div.appendTo($("body"));//与上面写法顺序不同
+					//div.prepend(div);//最前追加
+					//div.prependTo($("body"));
+					//$("body").after(div);
+					div.insertAfter($("body"));
+					$('span').html(i);
+					
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<p>页面中一共有<span>0</span>个div块。点击鼠标添加div：</p>
+		<p>我是段落</p>
+	</body>
+</html>

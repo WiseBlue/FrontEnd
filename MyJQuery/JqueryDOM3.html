@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>filter方法</title>
+		<style type="text/css">
+			div{
+				margin: 5px;padding: 5px;
+				height: 40px;width: 40px;
+				float: left;
+			}
+			.myClass1{
+				background: #FCFF9F;
+			}
+			.myClass2{
+				border: 2px solid #000000;
+			}
+		</style>
+		<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				/*$("div").addClass("myClass1");
+				var divs=$("div").filter("[class*='middle']");
+				divs.addClass("myClass2");*/
+				//$("div").addClass("myClass1").filter("[class*='middle']").addClass("myClass2");
+				$("div").addClass("myClass1").filter(function(index){
+					return index==1;
+				}).addClass("myClass2");
+				
+			})
+		</script>
+	</head>
+	<body>
+		<div></div>
+		<div class="middle"></div>
+		<div class="middle"></div>
+		<div class="middle"></div>
+		<div class="middle"></div>
+		<div></div>
+	</body>
+</html>

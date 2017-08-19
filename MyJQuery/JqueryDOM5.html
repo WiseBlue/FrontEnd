@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>each()方法</title>
+		<style type="text/css">
+			img{
+				border: 1px solid #003863;
+			}
+		</style>
+		<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				$("img").each(function(index){
+					this.title="这是第"+index+"幅图片，id是"+this.id;
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<img src="img/Star.png" id="img01"/>
+		<img src="img/Star2.png" id="img02"/>
+		<img src="img/Star.png" id="img03"/>
+		<img src="img/Star2.png" id="img04"/>
+		<img src="img/Star.png" id="img05"/>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>属性过滤选择器</title>
+		<script src="js/jquery-3.2.1.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(function(){
+				//alert($("input[name]").length);//包含name属性
+				//alert($("input[type='text']").length);//
+				//alert($("input[type!='text']").length);
+				//alert($("input[name^='s']").length);//name以s开头
+				//alert($("input[name$='hu']").val());//结尾为hude
+				alert($("input[name*='o']").length);//name
+			})
+		</script>
+	</head>
+	<body>
+		<input type="text" name="baidu" value="百度" /><br />
+		<input type="text" name="sohu" value="搜狐" /><br />
+		<input type="text" name="google" value="谷歌" /><br />
+		<input type="text" name="sogou" value="搜狗" /><br />
+		<input type="text" name="sina" value="百度" /><br />
+		<input type="button" name="hai tong" value="海同科技" />
+	</body>
+</html>

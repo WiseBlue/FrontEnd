@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表单选择器</title>
+		<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				//alert($(":input").length);//包含input，select，textarea，button
+				alert($(":text").length);
+			})
+		</script>
+	</head>
+	<body>
+		<form name="myform">
+			<input type="button" value="Input Button" /><br />
+			<input type="checkbox" value="football" /><br />
+			<input type="file" value="upload" /><br />
+			<input type="hidden" value="ok" /><br />
+			<input type="image" src="img/Star.png" /><br />
+			<input type="password" value="pass" value="111" /><br />
+			<input type="radio" value="male" /><br />
+			<input type="reset" value="重置" /><br />
+			<input type="submit" value="提交" /><br />
+			<input type="text" name="name" value="chenhao" /><br />
+			<input type="text" name="age" value="age" /><br />
+			<select>
+				<option>Option1</option>
+				<option>Option2</option>
+			</select><br />
+			<textarea cols="10" rows="5">多行文本框</textarea><br />
+			<button type="button">Button</button><br />
+			<input	 type="image" src="img/Star2.png" /><br />
+			<img  src="img/Star2.png"/>
+		</form>
+	</body>
+</html>

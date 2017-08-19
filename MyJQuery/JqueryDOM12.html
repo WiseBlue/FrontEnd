@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>节点样式的操作</title>
+		<style type="text/css">
+			.myClass1{
+				border: 1px solid #750037;
+				width: 120px; height: 80px;
+				background-color: #ffcdfc;
+			}
+		</style>
+		<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				$("div").click(function(){
+					if($(this).hasClass("myClass1")){
+						$(this).removeClass("myClass1");
+					}else{
+						$(this).addClass("myClass1");	
+					}
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div>我是div</div>
+	</body>
+</html>

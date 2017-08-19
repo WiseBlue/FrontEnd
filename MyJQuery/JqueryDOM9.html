@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>复制和替换元素</title>
+		<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				$("img:eq(0)").click(function(){
+					//$(this).clone().appendTo($('body'));//复制节点，复制后的节点无clone功能
+					//$(this).clone(true).appendTo($('body'));//复制节点，复制后的节点有clone功能
+					$("img:eq(1)").replaceWith("<a href='#'>我是超链接</a>");
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<img src="img/Star.png" /><img src="img/Star2.png" />
+	</body>
+</html>

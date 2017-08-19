@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>层次选择器</title>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				//alert($("#divTest a").length);//内部所有a标签
+				//alert($("#divTest>input").length);//内部子一级的个数
+				//alert($("#next+input").length);//下一个同位元素
+				alert($("#next~input").length);
+				
+				
+			});
+		</script>
+	</head>
+	<body>
+		<div id="divTest">
+			<input type="text" value="投资" />
+			<input id="next" type="text" />
+			<input type="text" value="担当" />
+			<input type="text" title="学习" value="学习" />
+			<a>1<input type="text" value="投票"/></a>
+			<a>2<a>3</a></a>
+		</div>
+	</body>
+</html>

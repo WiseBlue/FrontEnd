@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				font-size: 12px;
+				font-family: arial,helvetica,sans-serif;
+			}
+			div{
+				border: 1px solid #003A75;
+				background: #fcff9f;
+				margin: 5px;padding: 5px;
+				text-align: center;
+				height: 20px;width: 20px;
+				float: left;
+				cursor: help;
+			}
+		</style>
+		<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+		<script>
+			$(function(){
+				$("div").click(function(){
+					var index=$("div").index(this);
+					$("span").html(index.toString());
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div>0</div><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div>
+		点击的div块序号为：<span></span>
+	</body>
+</html>

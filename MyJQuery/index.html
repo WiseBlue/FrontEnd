@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function(){
+				var span=document.getElementById("show").firstChild.nextSibling;
+				//alert(span.innerHTML);
+				alert($(span).html());
+			})
+		</script>
+		
+	</head>
+	<body>
+		<div id="show">
+			<span>要显示的内容1</span>
+			<span>要显示的内容2</span>
+			<span>要显示的内容3</span>
+		</div>
+	</body>
+</html>

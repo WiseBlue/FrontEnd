@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表单对象属性过滤选择器 </title>
+		<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				//alert($(':text:disabled').length);
+				alert($('select :selected').text());//有空格为查找内部子元素
+				//alert($('select :selected').text());
+			})
+		</script>
+	</head>
+	<body>
+		<form id="myform">
+			<input type="text" name="myname" value="chenhao" /><br />
+			<input type="text" name="myage" value="34" disabled="disabled"/><br />
+			<input type="text" name="pass" value="123" /><br />
+			<input type="text" name="dog" value="阿旺" disabled="disabled"/><br />
+			<input type="checkbox" name="hobby" value="football" checked="checked"/>足球<br />
+			<input type="checkbox" name="hobby" value="basketball" />篮球<br />
+			<input type="checkbox" name="hobby" value="tennis" />网球<br />
+			<select name="test" multiple="multiple">
+				<option selected="selected">浙江</option>
+				<option>湖南</option>
+				<option>北京</option>
+				<option>天津</option>
+				<option selected="selected">上海</option>
+			</select>
+		</form>
+	</body>
+</html>

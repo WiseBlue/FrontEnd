@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>基本过滤选择器</title>
+		<script src="js/jquery-3.2.1.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(function(){
+				//alert($('li:first').html());//查找所属元素第一个
+				//alert($('li:last').html());//查找所属元素最后一个
+				//alert($("ul input:not(:checked)").val());//input里面没有被选中的
+				//alert($('li:even').get(1).innerHTML);//单数个数的li标签
+				//alert($('li:odd').get(1).innerHTML);//偶数个数的li标签
+				//alert($('li:eq(2)').get(1).innerHTML);//获取目标为2
+				//alert($('li:gt(2)').get(1).innerHTML);//大于2
+				//alert($('li:lt(2)').get(1).innerHTML);//大于2
+				alert($(':header').length);
+			})
+		</script>
+	</head>
+	<body>
+		<div id="divTest">
+			<ul>
+				<li>投资</li>
+				<li>理财</li>
+				<li>成熟</li>
+				<li>担当</li>
+				<input type="radio" value="学习" checked="checked"/>学习
+				<input type="radio" value="不学习" />不学习
+				<h1>Header1</h1>
+				<h2>Header2</h2>
+			</ul>
+		</div>
+	</body>
+</html>
